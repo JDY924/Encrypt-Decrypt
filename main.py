@@ -6,6 +6,8 @@ print("Rules:")
 print("You can't paste into the console, but you can copy.")
 alphabet = "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+{}|:<>?=-[]\;',./`~ABCDEFGHIJKLMNOPQRSTUVWXYZ "
 message = ''
+
+
 def encrypt():
   global message
   message = input("Enter the message to encrypt:")
@@ -23,6 +25,7 @@ def encrypt():
   for i in range(10):
     sleep(0.25)
   loader.stop()
+  os.system('clear')
   print(encrypt)
   return encrypt
 
@@ -32,12 +35,8 @@ def encrypt():
 
 
 def decrypt():
-
-
   e = open("encrypted_message.txt", "r")
   message = e.read()
-  
-
   
   key = input("Enter the encryption key:")
   encrypt = ""
@@ -70,10 +69,6 @@ while True:
   if choice != "y":
     print("Thank you for using this program.")
     break
-# if remainder == 0 then the message is not encrypted
-# decrypt 
-# error handling 
-# place into function
 
-#create text file using user input as the name
-#read files to decrypt
+
+#------------ Update `
